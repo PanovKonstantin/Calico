@@ -140,8 +140,7 @@ export const selectUserScore = (state: RootState) => {
 
 export const selectScores = (state: RootState) => {
   const scores: { [user: string]: GameScore } = {};
-  console.log(state.game.userState);
-  
+
   for (const user in state.game.userState) {
     if (
       Object.prototype.hasOwnProperty.call(

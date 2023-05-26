@@ -37,7 +37,7 @@ const Board = () => {
     tileSize
   );
 
-  const [tileWidth, tileHeight, tileMargin] =
+  const [tileWidth, tileHeight] =
     useTileSize(tileSize);
   const boardCellPlacer: CellPlacer = ([x, y]) => {
     const [left, top, width, height] = cellPlacer([x, y]);

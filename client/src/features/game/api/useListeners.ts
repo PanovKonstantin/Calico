@@ -17,15 +17,12 @@ export default function useSocketListeners() {
       dispatch(viewedSocketChanged(socket.id));
     });
     socket.on("room", (id) => {
-      console.log("room:", id);
       dispatch(roomIdSet(id));
     });
     socket.on("state", (data) => {
-      console.log("state:", data);
       dispatch(gameStateUpdated(data));
     });
     socket.on("roommates", (data) => {
-      console.log("roommates:", data);
       dispatch(roommatesUpdated(data));
     });
     return () => {
