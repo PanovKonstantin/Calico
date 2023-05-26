@@ -1,0 +1,16 @@
+.hexagon {
+  width: calc(1.73 * 4em);
+  height: calc(2 * 4em);
+  clip-path: polygon(
+    0% 25%,
+    0% 75%,
+    50% 100%,
+    100% 75%,
+    100% 25%,
+    50% 0%
+  );
+}
+
+.blue {
+  background-color: rgb(232, 205, 54);
+}
