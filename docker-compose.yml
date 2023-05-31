@@ -3,8 +3,6 @@ version: '3.7'
 services:
   client:
     container_name: client
-    env_file:
-      - .env
     command: serve -s build
     image: client
     build: 
