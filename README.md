@@ -28,3 +28,8 @@ Install all required node packages
 ```npm install -g serve```
 
 ```serve -s build```
+
+
+## Docker installation
+
+```docker compose up```
